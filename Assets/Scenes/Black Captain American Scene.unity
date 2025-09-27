@@ -256,7 +256,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1788885513
+--- !u!1 &314883069
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -264,47 +264,61 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1788885515}
-  - component: {fileID: 1788885514}
+  - component: {fileID: 314883071}
+  - component: {fileID: 314883070}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: Spawner2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1788885514
+--- !u!114 &314883070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788885513}
+  m_GameObject: {fileID: 314883069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f81be26c7e1b8984eac1a49ae25be23b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbd7687e97f8eb438f7fdc8230564f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChristmasTree: {fileID: 8268554211242408623, guid: 11ce14dc232e0b746858fc5ecc208745, type: 3}
-  Ham: {fileID: 7102359389502056442, guid: 32dfdf6a997face44a6c32ab2edef49d, type: 3}
-  PumpkinPie: {fileID: 5008093885812734066, guid: 35e5291fd9c1c4344a267ddbc4b956cc, type: 3}
-  Cranberry: {fileID: 1000931671620658814, guid: 10497eec76127ee4db3bcece0ac9b795, type: 3}
-  Dressing: {fileID: 800167001583291082, guid: 9dfb7243cbcfda8419132d15008af8ad, type: 3}
-  BananaPudding: {fileID: 4454266398468022094, guid: 8ef11f969e14f0347a2483d7c6e8c0cd, type: 3}
-  Turkey: {fileID: 6139480335405256526, guid: 6e579f429b8dd364288eb5cf570d86ba, type: 3}
-  slowInterval: 5.5
-  normalInterval: 3.5
-  fastInterval: 2
---- !u!4 &1788885515
+  Food: {fileID: 4454266398468022094, guid: 8ef11f969e14f0347a2483d7c6e8c0cd, type: 3}
+  timetoSpawn: 2
+  spawnCountdown: 1
+  Food2: {fileID: 4776347730519071427, guid: 35048b0d5e63af245b8b051be2601e8b, type: 3}
+  timetoSpawn2: 10
+  spawnCountdown2: 0
+  Food3: {fileID: 8268554211242408623, guid: 11ce14dc232e0b746858fc5ecc208745, type: 3}
+  timetoSpawn3: 20
+  spawnCountdown3: 0
+  Food4: {fileID: 1000931671620658814, guid: 10497eec76127ee4db3bcece0ac9b795, type: 3}
+  timetoSpawn4: 15
+  spawnCountdown4: 0
+  Food5: {fileID: 800167001583291082, guid: 9dfb7243cbcfda8419132d15008af8ad, type: 3}
+  timetoSpawn5: 7
+  spawnCountdown5: 0
+  Food6: {fileID: 7102359389502056442, guid: 32dfdf6a997face44a6c32ab2edef49d, type: 3}
+  timetoSpawn6: 10
+  spawnCountdown6: 0
+  Food7: {fileID: 5008093885812734066, guid: 35e5291fd9c1c4344a267ddbc4b956cc, type: 3}
+  timetoSpawn7: 12
+  spawnCountdown7: 0
+  Food8: {fileID: 6139480335405256526, guid: 6e579f429b8dd364288eb5cf570d86ba, type: 3}
+  timetoSpawn8: 13
+  spawnCountdown8: 0
+--- !u!4 &314883071
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788885513}
+  m_GameObject: {fileID: 314883069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.42, y: 14.87, z: -0.019182825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -315,4 +329,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 149991502}
-  - {fileID: 1788885515}
+  - {fileID: 314883071}
