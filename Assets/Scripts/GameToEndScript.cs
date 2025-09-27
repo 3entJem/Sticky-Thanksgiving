@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 public class ObjectEndScript : MonoBehaviour
 {
     public GameObject triggerbox;
-    private float strikes = 0f;
+    public float strikes = 0f;
+    public GameObject SideColliders;
+    public GameObject Corn1;
+    public GameObject Corn2;
+    public GameObject Corn3;
+    public GameObject DeadCorn1;
+    public GameObject DeadCorn2;
+    public GameObject DeadCorn3;
 
     void Start()
     {
@@ -15,7 +22,30 @@ public class ObjectEndScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (strikes == 0)
+        {
+            Corn1.gameObject.SetActive(true);
+            Corn2.gameObject.SetActive(true);
+            Corn3.gameObject.SetActive(true);
+            DeadCorn1.gameObject.SetActive(false);
+            DeadCorn2.gameObject.SetActive(false);
+            DeadCorn3.gameObject.SetActive(false);
+        }
+        if (strikes == 1)
+        {
+            Corn1.gameObject.SetActive(false);
+            DeadCorn2.gameObject.SetActive(true);
+        }
+        if (strikes == 2)
+        {
+            Corn2.gameObject.SetActive(false);
+            DeadCorn2.gameObject.SetActive(true);
+        }
+        if (strikes == 3)
+        {
+            Corn3.gameObject.SetActive (false);
+            DeadCorn3.gameObject.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,10 +54,15 @@ public class ObjectEndScript : MonoBehaviour
         {
             strikes += 1;
         }
+        if (SideColliders.CompareTag("Christmas"))
+        {
+            strikes += 1;
+        }
         if (strikes >= 3)
         {
             Time.timeScale = 0f;
             SceneManager.LoadScene(2);
         }
+        
     }
 }

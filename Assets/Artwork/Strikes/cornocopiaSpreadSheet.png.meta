@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cornocopiaSpreadSheet_0: 2225330120377798224
+      cornocopiaSpreadSheet_1: 6164285912417031481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
