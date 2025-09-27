@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseScene.unity
     guid: 863655b36dd4cb545a0a13c79b68713b
+  - enabled: 1
+    path: Assets/Scenes/OpeningScene.unity
+    guid: 6c6eadeae87e2844abd8b1e8eee8f74b
+  - enabled: 1
+    path: Assets/Scenes/OliviaScene.unity
+    guid: 130c4c5178771ae49bb8db50cfab700a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

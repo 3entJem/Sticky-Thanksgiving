@@ -6,12 +6,12 @@ public class BackToOpenScript : MonoBehaviour
 {
     public void ToStartScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(4);
     }
 
     public void ToPlayScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 
     public void ToWin()
