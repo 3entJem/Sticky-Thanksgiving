@@ -3,73 +3,93 @@ using System.Collections;
 using System.Collections.Generic;
 public class Spawnerpt2 : MonoBehaviour
 {
-    public List<Wave> waves = new List<Wave>();
-    float maxTimer = 1f;
-    float timer = 1f;
-
-    public GameObject point1;
+    p public GameObject point1;
     public GameObject point2;
 
-    bool spawn;
+    [System.Serializable]
+    public class SpawnableEnemy
+    {
+        public string name;
+        public GameObject enemyPrefab;
+        public int count;
+        public float interval; // Time between spawns for this enemy type
+    }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [System.Serializable]
+    public class Wave
+    {
+        public string waveName;
+        public List<SpawnableEnemy> enemiesInWave = new List<SpawnableEnemy>();
+    }
+
+    public List<Wave> waves = new List<Wave>();
+    public Transform[] spawnPoints;
+
+    public float timeBetweenWaves = 5f;
+    private int currentWaveIndex = 0;
+
     void Start()
     {
-
-        timer = waves[0].interval;
-        maxTimer = waves[0].interval;
-        
-
-        
-        
+        StartCoroutine(RunWaves());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator RunWaves()
     {
-        timer -= Time.deltaTime;
-        if (timer <= 0f)
+        while (currentWaveIndex < waves.Count)
         {
-            spawn = true;
-        }
-        else
-        {
-            spawn = false;
-        }
-        if (spawn)
-        {
-            Spawn();
+            Wave currentWave = waves[currentWaveIndex];
+            Debug.Log($"Starting Wave {currentWaveIndex + 1}: {currentWave.waveName}");
+
+            yield return StartCoroutine(SpawnWaveRandomized(currentWave));
+
+            currentWaveIndex++;
+            yield return new WaitForSeconds(timeBetweenWaves);
         }
 
-        // if (timer == 0f)
-        // {
-        //     // foreach (Wave wave in waves)
-        //     // {
-        //     //     Instantiate(wave.foodPrefab, ChooseSpawnPoint(), Quaternion.identity);
-        //     // }
-        //     timer = maxTimer;
-        // }
-        // //GameObject newFood = Instantiate(Food, new Vector3(Random.Range(-5f, 5), Random.Range(-6f, 0), 0), Quaternion.identity);
-
-
+        Debug.Log("All waves completed!");
     }
 
-    void Spawn()
+    IEnumerator SpawnWaveRandomized(Wave wave)
     {
-        for (int i = 1; i < waves.Count; i++)
+        // Create a flat list of all enemies to spawn
+        List<SpawnableEnemy> spawnQueue = new List<SpawnableEnemy>();
+
+        foreach (var enemy in wave.enemiesInWave)
         {
-            if (timer <= 0f)
+            for (int i = 0; i < enemy.count; i++)
             {
-                Instantiate(waves[i].foodPrefab, ChooseSpawnPoint(), Quaternion.identity);
-                timer = waves[i].interval;
-                i++;
+                spawnQueue.Add(enemy);
             }
         }
+
+        // Shuffle the list randomly
+        Shuffle(spawnQueue);
+
+        // Spawn enemies one by one from the randomized list
+        foreach (var enemy in spawnQueue)
+        {
+            SpawnEnemy(enemy.enemyPrefab);
+            yield return new WaitForSeconds(enemy.interval);
+        }
     }
 
-    public Vector2 ChooseSpawnPoint()
+    void SpawnEnemy(GameObject prefab)
     {
+        if (spawnPoints.Length == 0) return;
+
         Vector2 spawnPosition = new Vector2(Random.Range(point1.transform.position.x, point2.transform.position.x), Random.Range(point1.transform.position.y, point2.transform.position.y));
-        return spawnPosition;
+        Instantiate(prefab, spawnPosition, Quaternion.identity);
+    }
+
+    // Fisher–Yates shuffle
+    void Shuffle<T>(List<T> list)
+    {
+        for (int i = list.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            T temp = list[i];
+            list[i] = list[j];
+            list[j] = temp;
+        }
     }
 }
