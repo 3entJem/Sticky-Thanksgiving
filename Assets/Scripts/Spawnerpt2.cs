@@ -3,117 +3,73 @@ using System.Collections;
 using System.Collections.Generic;
 public class Spawnerpt2 : MonoBehaviour
 {
-    public GameObject Food;
-    public float timetoSpawn, spawnCountdown;
+    public List<Wave> waves = new List<Wave>();
+    float maxTimer = 1f;
+    float timer = 1f;
 
-    public GameObject Food2;
-    public float timetoSpawn2, spawnCountdown2;
+    public GameObject point1;
+    public GameObject point2;
 
-    public GameObject Food3;
-    public float timetoSpawn3, spawnCountdown3;
-    public GameObject Food4;
-    public float timetoSpawn4, spawnCountdown4;
-    public GameObject Food5;
-    public float timetoSpawn5, spawnCountdown5;
-    public GameObject Food6;
-    public float timetoSpawn6, spawnCountdown6;
-    public GameObject Food7;
-    public float timetoSpawn7, spawnCountdown7;
-    public GameObject Food8;
-    public float timetoSpawn8, spawnCountdown8;
+    bool spawn;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spawnCountdown = timetoSpawn;
-        spawnCountdown2 = timetoSpawn2;
-        spawnCountdown3 = timetoSpawn3;
-        spawnCountdown4 = timetoSpawn4;
-        spawnCountdown5 = timetoSpawn5;
-        spawnCountdown6 = timetoSpawn6;
-        spawnCountdown7 = timetoSpawn7;
-        spawnCountdown8 = timetoSpawn8;
+
+        timer = waves[0].interval;
+        maxTimer = waves[0].interval;
+        
+
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        spawnCountdown -= Time.deltaTime;
-        if (spawnCountdown <= 0)
+        timer -= Time.deltaTime;
+        if (timer <= 0f)
         {
-            SpawnFood();
-            spawnCountdown = timetoSpawn;
-
+            spawn = true;
         }
-        spawnCountdown2 -= Time.deltaTime;
-        if (spawnCountdown2 <= 0)
+        else
         {
-            Instantiate(Food2, transform.position, transform.rotation);
-            spawnCountdown2 = timetoSpawn2;
-
+            spawn = false;
         }
-        spawnCountdown3 -= Time.deltaTime;
-        if (spawnCountdown3 <= 0)
+        if (spawn)
         {
-            Instantiate(Food3, transform.position, transform.rotation);
-            spawnCountdown3 = timetoSpawn3;
-
+            Spawn();
         }
-        spawnCountdown4 -= Time.deltaTime;
-        if (spawnCountdown4 <= 0)
-        {
-            Instantiate(Food4, transform.position, transform.rotation);
-            spawnCountdown4 = timetoSpawn4;
 
-        }
-        spawnCountdown5 -= Time.deltaTime;
-        if (spawnCountdown5 <= 0)
-        {
-            Instantiate(Food5, transform.position, transform.rotation);
-            spawnCountdown5 = timetoSpawn5;
+        // if (timer == 0f)
+        // {
+        //     // foreach (Wave wave in waves)
+        //     // {
+        //     //     Instantiate(wave.foodPrefab, ChooseSpawnPoint(), Quaternion.identity);
+        //     // }
+        //     timer = maxTimer;
+        // }
+        // //GameObject newFood = Instantiate(Food, new Vector3(Random.Range(-5f, 5), Random.Range(-6f, 0), 0), Quaternion.identity);
 
-        }
-        spawnCountdown6 -= Time.deltaTime;
-        if (spawnCountdown6 <= 0)
-        {
-            Instantiate(Food6, transform.position, transform.rotation);
-            spawnCountdown6 = timetoSpawn6;
-
-        }
-        spawnCountdown7 -= Time.deltaTime;
-        if (spawnCountdown7 <= 0)
-        {
-            Instantiate(Food7, transform.position, transform.rotation);
-            spawnCountdown7 = timetoSpawn7;
-
-        }
-        spawnCountdown8 -= Time.deltaTime;
-        if (spawnCountdown8 <= 0)
-        {
-            Instantiate(Food8, transform.position, transform.rotation);
-            spawnCountdown8 = timetoSpawn8;
-
-        }
 
     }
 
-    void SpawnFood()
+    void Spawn()
     {
-        
-        Instantiate(Food, transform.position, transform.rotation);
-        Instantiate(Food2, transform.position, transform.rotation);
-        Instantiate(Food3, transform.position, transform.rotation);
-        Instantiate(Food4, transform.position, transform.rotation);
-        Instantiate(Food5, transform.position, transform.rotation);
-        Instantiate(Food6, transform.position, transform.rotation);
-        Instantiate(Food7, transform.position, transform.rotation);
-        Instantiate(Food8, transform.position, transform.rotation);
-        
-        GameObject newFood = Instantiate(Food, new Vector3(Random.Range(-5f, 5), Random.Range(-6f, 6f), 0), Quaternion.identity);
-      
+        for (int i = 1; i < waves.Count; i++)
+        {
+            if (timer <= 0f)
+            {
+                Instantiate(waves[i].foodPrefab, ChooseSpawnPoint(), Quaternion.identity);
+                timer = waves[i].interval;
+                i++;
+            }
+        }
+    }
 
-
-
+    public Vector2 ChooseSpawnPoint()
+    {
+        Vector2 spawnPosition = new Vector2(Random.Range(point1.transform.position.x, point2.transform.position.x), Random.Range(point1.transform.position.y, point2.transform.position.y));
+        return spawnPosition;
     }
 }
