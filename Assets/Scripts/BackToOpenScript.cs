@@ -9,4 +9,18 @@ public class BackToOpenScript : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void ToPlayScene()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void ToWin()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void ToLose()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
