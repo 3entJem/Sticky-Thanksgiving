@@ -8,6 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: e61531ec26b09a84e949e241600e0121
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 4829f218fc3fdaf4cbd125b55aea4f1b
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: 863655b36dd4cb545a0a13c79b68713b
+  - enabled: 1
+    path: Assets/Scenes/OpeningScene.unity
+    guid: 6c6eadeae87e2844abd8b1e8eee8f74b
+  - enabled: 1
+    path: Assets/Scenes/OliviaScene.unity
+    guid: 130c4c5178771ae49bb8db50cfab700a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
