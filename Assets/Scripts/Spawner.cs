@@ -12,9 +12,9 @@ public class Spanwer : MonoBehaviour
     [SerializeField] private GameObject Turkey;
 
 
-    [SerializeField] private float slowInterval = 5.5f;
-    [SerializeField] private float normalInterval = 3.5f;
-    [SerializeField] private float fastInterval = 2f;
+    [SerializeField] private float slowInterval = 10f;
+    [SerializeField] private float normalInterval = 7f;
+    [SerializeField] private float fastInterval = 5f;
     void Start()
     {
         StartCoroutine(spawnEnemy(slowInterval, ChristmasTree));

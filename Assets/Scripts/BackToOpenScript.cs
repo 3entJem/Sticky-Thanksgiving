@@ -14,13 +14,8 @@ public class BackToOpenScript : MonoBehaviour
         SceneManager.LoadScene(5);
     }
 
-    public void ToWin()
+    public void ToEnding()
     {
         SceneManager.LoadScene(2);
-    }
-
-    public void ToLose()
-    {
-        SceneManager.LoadScene(3);
     }
 }
