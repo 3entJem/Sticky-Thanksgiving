@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4951421990208154261}
-  - component: {fileID: 12735072128651114}
+  - component: {fileID: 4223898763649428173}
   m_Layer: 0
   m_Name: SpawnerP
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &12735072128651114
+--- !u!114 &4223898763649428173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,9 +41,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 8611330765846539320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2909c3dbee459ad4c88a060d14895814, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbd7687e97f8eb438f7fdc8230564f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waves: []
-  point1: {fileID: 0}
-  point2: {fileID: 0}
+  waves:
+  - waveName: 
+    enemiesInWave:
+    - name: 
+      enemyPrefab: {fileID: 4454266398468022094, guid: 8ef11f969e14f0347a2483d7c6e8c0cd, type: 3}
+      count: 20
+      interval: 1
+    - name: 
+      enemyPrefab: {fileID: 4776347730519071427, guid: 35048b0d5e63af245b8b051be2601e8b, type: 3}
+      count: 20
+      interval: 1
+  spawnPointA: {fileID: 0}
+  spawnPointB: {fileID: 0}
+  timeBetweenWaves: 5
