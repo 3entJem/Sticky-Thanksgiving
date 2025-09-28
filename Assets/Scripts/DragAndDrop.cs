@@ -1,31 +1,31 @@
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using Color = UnityEngine.Color;
 
-public class DragAndDrop : MonoBehaviour
+public class DragAndDrop : MonoBehaviour, IPointerDownHandler
 {
-    private bool dragging = false;
+    private bool isDragging = false;
     private Vector3 offset;
 
     void Update()
     {
-        if (dragging)
+        if (isDragging)
         {
-            transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, offset.z));
-            
+            transform.position = Input.mousePosition + offset;
         }
     }
-    
-    private void OnMouseDown()
-    {
-        offset = transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(transform.position).z));
-        dragging = true;
-    }
-    private void OnMouseUp()
-    {
-        dragging = false;
-    }
-}
 
-   
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        isDragging = true;
+        offset = transform.position - Input.mousePosition;
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        isDragging = false;
+    }
+
+}
