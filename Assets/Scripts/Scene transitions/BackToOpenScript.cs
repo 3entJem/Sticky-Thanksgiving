@@ -6,7 +6,7 @@ public class BackToOpenScript : MonoBehaviour
 {
     public void ToStartScene()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(0);
     }
 
     public void ToPlayScene()
@@ -22,11 +22,11 @@ public class BackToOpenScript : MonoBehaviour
 
     public void ToTutorial()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(3);
     }
 
     public void ToCredits()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(4);
     }
 }
