@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5008093885812734066
+--- !u!1 &7102359389502056442
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7646913158281691911}
-  - component: {fileID: 6662376547582740543}
-  - component: {fileID: 2371638321394903651}
-  - component: {fileID: 807150180217897523}
-  - component: {fileID: -217982254293249851}
-  - component: {fileID: 1995945355650396756}
+  - component: {fileID: 6822251468962738085}
+  - component: {fileID: 5201619235537773098}
+  - component: {fileID: 3084113583785426895}
+  - component: {fileID: 3240530461894034263}
+  - component: {fileID: -7729242964932866407}
+  - component: {fileID: -837689482672285179}
   m_Layer: 0
   m_Name: Pumpkin Pie
   m_TagString: Food
@@ -21,28 +21,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7646913158281691911
+--- !u!4 &6822251468962738085
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008093885812734066}
+  m_GameObject: {fileID: 7102359389502056442}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.134572, y: 1.2550554, z: 0}
+  m_LocalPosition: {x: -25.490953, y: -1.1190968, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6662376547582740543
+--- !u!212 &5201619235537773098
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008093885812734066}
+  m_GameObject: {fileID: 7102359389502056442}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -91,14 +91,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &2371638321394903651
+--- !u!50 &3084113583785426895
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008093885812734066}
+  m_GameObject: {fileID: 7102359389502056442}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -118,13 +118,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &807150180217897523
+--- !u!61 &3240530461894034263
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008093885812734066}
+  m_GameObject: {fileID: 7102359389502056442}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -148,7 +148,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -162,27 +162,27 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.6, y: 2.86}
+  m_Size: {x: 5.65, y: 3.88}
   m_EdgeRadius: 0
---- !u!114 &-217982254293249851
+--- !u!114 &-7729242964932866407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008093885812734066}
+  m_GameObject: {fileID: 7102359389502056442}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bb8aef1a51044042be934defef1c5c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1995945355650396756
+--- !u!114 &-837689482672285179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008093885812734066}
+  m_GameObject: {fileID: 7102359389502056442}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bc35eb67fb8aa944a814c254f48cb66, type: 3}
