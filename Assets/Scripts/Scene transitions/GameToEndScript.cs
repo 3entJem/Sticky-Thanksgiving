@@ -6,7 +6,7 @@ public class ObjectEndScript : MonoBehaviour
 {
     public GameObject triggerbox;
     public float strikes = 0f;
-    public GameObject SideColliders;
+    
     public GameObject Corn1;
     public GameObject Corn2;
     public GameObject Corn3;
@@ -34,7 +34,7 @@ public class ObjectEndScript : MonoBehaviour
         if (strikes == 1)
         {
             Corn1.gameObject.SetActive(false);
-            DeadCorn2.gameObject.SetActive(true);
+            DeadCorn1.gameObject.SetActive(true);
         }
         if (strikes == 2)
         {
