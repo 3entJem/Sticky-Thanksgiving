@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OliviaScene.unity
     guid: 130c4c5178771ae49bb8db50cfab700a
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: ed57f0af3e217b749b0581f04dd283e1
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 4b9d5d44db07f5b4eb0dfa56a71527bf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

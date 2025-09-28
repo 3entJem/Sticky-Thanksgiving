@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd584c89224e15b49b636bb24f5f26c5
+guid: a2a5d0fc4d22e0c4fa863a42a3d104d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6166014446617790355
-    second: ChristmastreeCookieVarient1_0
+      213: 3584694338506933813
+    second: HandCLickerOpen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChristmastreeCookieVarient1_0
+      name: HandCLickerOpen_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 44
-        width: 404
-        height: 703
+        x: 45
+        y: 27
+        width: 350
+        height: 331
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39784926875129550800000000000000
-      internalID: 6166014446617790355
+      spriteID: 5364f0322846fb130800000000000000
+      internalID: 3584694338506933813
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ChristmastreeCookieVarient1_0: 6166014446617790355
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

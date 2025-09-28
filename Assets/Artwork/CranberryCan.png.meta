@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CranberryCan_0: 8099180436175098990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

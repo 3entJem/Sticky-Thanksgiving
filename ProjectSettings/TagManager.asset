@@ -43,5 +43,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: CoveringScreen
+    uniqueID: 1849659847
+    locked: 0
+  - name: screen
+    uniqueID: 2550710111
+    locked: 0
+  - name: background
+    uniqueID: 4031626385
+    locked: 0
   m_RenderingLayers:
   - Default

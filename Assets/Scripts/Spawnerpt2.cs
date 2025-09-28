@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 public class Spawnerpt2 : MonoBehaviour
 {
-    p public GameObject point1;
+    public GameObject point1;
     public GameObject point2;
 
     [System.Serializable]

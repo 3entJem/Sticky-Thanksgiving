@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using System.Collections.Generic;
 
 public class BarController : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class BarController : MonoBehaviour
     public GameObject SideColliders;
     
 
-    public int currentLv = 1;
+    public int currentLv = 0;
     public float currentXP = 0f;
     public float targetXP = 20f;
     public float setamount = 2f;
@@ -48,7 +49,7 @@ public class BarController : MonoBehaviour
     void UpdateUI()
     {
         Lvbarfill.fillAmount = currentXP / targetXP;
-        LvText.text = currentLv.ToString("Lv." + currentLv);
+        LvText.text = currentLv.ToString();
     }
    
 
@@ -58,6 +59,8 @@ public class BarController : MonoBehaviour
         {
             AddXP(setamount);
             Destroy(gameObject);
+            currentXP += setamount;
+            Debug.Log("it has activated");
 
         }
     }

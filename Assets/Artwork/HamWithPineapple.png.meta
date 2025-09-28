@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HamWithPineapple_0: -3722052027372524922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

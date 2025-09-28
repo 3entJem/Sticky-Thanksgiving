@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd584c89224e15b49b636bb24f5f26c5
+guid: e9934292210be6445b83d6f0ace39cee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6166014446617790355
-    second: ChristmastreeCookieVarient1_0
+      213: 325440641546151924
+    second: Credits_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChristmastreeCookieVarient1_0
+      name: Credits_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 44
-        width: 404
-        height: 703
+        x: 74
+        y: 135
+        width: 1864
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39784926875129550800000000000000
-      internalID: 6166014446617790355
+      spriteID: 4f765da0a82348400800000000000000
+      internalID: 325440641546151924
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ChristmastreeCookieVarient1_0: 6166014446617790355
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
