@@ -741,7 +741,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2192062837228134837}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -775,8 +775,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1310401793
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 1208040086343421634, guid: dbf1debc99b5b7843a3869d39077e23a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1404,8 +1404,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1310401793
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.2905661, g: 0.20778216, b: 0.26330915, a: 1}
@@ -2270,7 +2270,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -263340911
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -8841490917199087839, guid: bf82723ab3bd68046a199abbfb2c56b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2486,7 +2486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8309157241481386280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2781,13 +2781,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b018d65a086eb46baf35f224716a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battlefield: {fileID: 0}
-  backsquare: {fileID: 0}
-  image: {fileID: 0}
-  pause: {fileID: 0}
-  backtogame: {fileID: 0}
-  toopener: {fileID: 0}
-  quit: {fileID: 0}
+  battlefield: {fileID: 504517493487671846}
+  backsquare: {fileID: 3772887004518243318}
+  image: {fileID: 2192062837228134837}
+  pause: {fileID: 8393406955593490487}
+  backtogame: {fileID: 2802921841258990403}
+  toopener: {fileID: 5233445667030006841}
+  quit: {fileID: 6317374952375696252}
 --- !u!1 &8248458088200677800
 GameObject:
   m_ObjectHideFlags: 0

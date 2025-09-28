@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2313456391723659448, guid: 3700c3a459b0e144f96b8333c9b8bceb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3089256126116036227, guid: 3700c3a459b0e144f96b8333c9b8bceb, type: 3}
       propertyPath: m_Name
       value: UIPrefabPlayScene

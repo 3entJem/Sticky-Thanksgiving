@@ -17,7 +17,7 @@ public class TimepauseScript : MonoBehaviour
     {
         Time.timeScale = 0f;
         AudioListener.pause = true;
-        backsquare.gameObject.SetActive(true);
+        //backsquare.gameObject.SetActive(true);
         image.gameObject.SetActive(true);
         pause.gameObject.SetActive(false);
         backtogame.gameObject.SetActive(true);
