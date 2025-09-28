@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class Spawnerpt2 : MonoBehaviour
+
+public class Spawner : MonoBehaviour
 {
     public GameObject point1;
     public GameObject point2;
@@ -12,7 +13,7 @@ public class Spawnerpt2 : MonoBehaviour
         public string name;
         public GameObject enemyPrefab;
         public int count;
-        public float interval; // Time between spawns for this enemy type
+        public float interval;
     }
 
     [System.Serializable]
@@ -23,7 +24,10 @@ public class Spawnerpt2 : MonoBehaviour
     }
 
     public List<Wave> waves = new List<Wave>();
-    public Transform[] spawnPoints;
+
+    [Header("Random Spawn Area")]
+    public Transform spawnPointA;  // Bottom-left corner of spawn area
+    public Transform spawnPointB;  // Top-right corner of spawn area
 
     public float timeBetweenWaves = 5f;
     private int currentWaveIndex = 0;
@@ -51,7 +55,6 @@ public class Spawnerpt2 : MonoBehaviour
 
     IEnumerator SpawnWaveRandomized(Wave wave)
     {
-        // Create a flat list of all enemies to spawn
         List<SpawnableEnemy> spawnQueue = new List<SpawnableEnemy>();
 
         foreach (var enemy in wave.enemiesInWave)
@@ -62,10 +65,8 @@ public class Spawnerpt2 : MonoBehaviour
             }
         }
 
-        // Shuffle the list randomly
         Shuffle(spawnQueue);
 
-        // Spawn enemies one by one from the randomized list
         foreach (var enemy in spawnQueue)
         {
             SpawnEnemy(enemy.enemyPrefab);
@@ -75,13 +76,25 @@ public class Spawnerpt2 : MonoBehaviour
 
     void SpawnEnemy(GameObject prefab)
     {
-        if (spawnPoints.Length == 0) return;
-
-        Vector2 spawnPosition = new Vector2(Random.Range(point1.transform.position.x, point2.transform.position.x), Random.Range(point1.transform.position.y, point2.transform.position.y));
-        Instantiate(prefab, spawnPosition, Quaternion.identity);
+        Vector3 spawnPos = GetRandomSpawnPosition();
+        Instantiate(prefab, spawnPos, Quaternion.identity);
     }
 
-    // Fisher–Yates shuffle
+    Vector3 GetRandomSpawnPosition()
+    {
+        if (!spawnPointA || !spawnPointB)
+        {
+            Debug.LogWarning("Spawn points A and B must be assigned!");
+            return Vector3.zero;
+        }
+
+        float randomX = Random.Range(spawnPointA.position.x, spawnPointB.position.x);
+        float randomY = Random.Range(spawnPointA.position.y, spawnPointB.position.y);
+        float randomZ = Random.Range(spawnPointA.position.z, spawnPointB.position.z);
+
+        return new Vector3(randomX, randomY, randomZ);
+    }
+
     void Shuffle<T>(List<T> list)
     {
         for (int i = list.Count - 1; i > 0; i--)
