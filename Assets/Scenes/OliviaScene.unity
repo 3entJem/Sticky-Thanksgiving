@@ -657,6 +657,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1719381287337752034, guid: 3700c3a459b0e144f96b8333c9b8bceb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2192062837228134837, guid: 3700c3a459b0e144f96b8333c9b8bceb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -688,6 +692,14 @@ PrefabInstance:
     - target: {fileID: 3089256126116036227, guid: 3700c3a459b0e144f96b8333c9b8bceb, type: 3}
       propertyPath: m_Name
       value: UIPrefabPlayScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481586308463291619, guid: 3700c3a459b0e144f96b8333c9b8bceb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543470396548743622, guid: 3700c3a459b0e144f96b8333c9b8bceb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3772887004518243318, guid: 3700c3a459b0e144f96b8333c9b8bceb, type: 3}
       propertyPath: m_IsActive
