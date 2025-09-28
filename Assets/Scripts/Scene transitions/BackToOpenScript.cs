@@ -12,10 +12,21 @@ public class BackToOpenScript : MonoBehaviour
     public void ToPlayScene()
     {
         SceneManager.LoadScene(1);
+        AudioListener.pause = false;
     }
 
     public void ToEnding()
     {
         SceneManager.LoadScene(2);
+    }
+
+    public void ToTutorial()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void ToCredits()
+    {
+        SceneManager.LoadScene(6);
     }
 }
