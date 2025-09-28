@@ -368,7 +368,7 @@ SortingGroup:
   m_GameObject: {fileID: 96310902}
   m_Enabled: 1
   m_SortingLayerID: -1794420837
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!1 &214294458
@@ -790,7 +790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -1.632, y: -2.454, z: 10.398}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -138, y: -814}
+  m_AnchoredPosition: {x: -116, y: -786}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &429181481
@@ -1033,8 +1033,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1338217436704307211, guid: 0058144c2ad8d554f8132d2c1197dcb9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1447,7 +1447,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433478780}
   m_LocalRotation: {x: -0.007833982, y: -0.011084986, z: 0.009286215, w: 0.9998648}
-  m_LocalPosition: {x: 0, y: 0, z: -40}
+  m_LocalPosition: {x: 0, y: 0, z: -41}
   m_LocalScale: {x: 3.2850413, y: 3.2850413, z: 3.2850413}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1455,7 +1455,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -0.886, y: -1.279, z: 1.074}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 71, y: -1261}
+  m_AnchoredPosition: {x: 70, y: -1207}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1433478782
@@ -2026,7 +2026,7 @@ SortingGroup:
   m_GameObject: {fileID: 1822222743}
   m_Enabled: 1
   m_SortingLayerID: -1794420837
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!1 &2046141445
@@ -2111,7 +2111,7 @@ SortingGroup:
   m_GameObject: {fileID: 2046141445}
   m_Enabled: 1
   m_SortingLayerID: -1794420837
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_SortAtRoot: 0
 --- !u!1660057539 &9223372036854775807
