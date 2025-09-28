@@ -6,7 +6,7 @@ public class ObjectEndScript : MonoBehaviour
 {
     public GameObject triggerbox;
     public float strikes = 0f;
-    
+    public float setamount = 1f;
     public GameObject Corn1;
     public GameObject Corn2;
     public GameObject Corn3;
@@ -53,12 +53,9 @@ public class ObjectEndScript : MonoBehaviour
         Debug.Log("message");
         if (collision.gameObject.CompareTag("Food"))
         {
-            strikes += 1;
+            strikes += setamount;
         }
-        if (collision.gameObject.CompareTag("Christmas"))
-        {
-            strikes += 1;
-        }
+        
         if (strikes >= 3)
         {
             Time.timeScale = 0f;
