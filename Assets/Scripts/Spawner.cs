@@ -4,8 +4,7 @@ using System.Collections.Generic;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject point1;
-    public GameObject point2;
+   
 
     [System.Serializable]
     public class SpawnableEnemy

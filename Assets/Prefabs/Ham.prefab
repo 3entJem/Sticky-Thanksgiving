@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3084113583785426895}
   - component: {fileID: 3240530461894034263}
   - component: {fileID: -7729242964932866407}
+  - component: {fileID: -837689482672285179}
   m_Layer: 0
   m_Name: Ham
   m_TagString: Food
@@ -173,5 +174,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bb8aef1a51044042be934defef1c5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-837689482672285179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7102359389502056442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc35eb67fb8aa944a814c254f48cb66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8949660586685853862}
   - component: {fileID: -1972601510644062877}
   - component: {fileID: -7841695822250500524}
+  - component: {fileID: -7394306726609307169}
   m_Layer: 0
   m_Name: Dressing
   m_TagString: Food
@@ -173,5 +174,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bb8aef1a51044042be934defef1c5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7394306726609307169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800167001583291082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc35eb67fb8aa944a814c254f48cb66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
