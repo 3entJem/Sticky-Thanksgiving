@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2861615668136248702}
   - component: {fileID: -3968085952062070056}
   - component: {fileID: -2320404018360166838}
+  - component: {fileID: -554669130156870479}
+  - component: {fileID: -3832692563009495433}
   m_Layer: 0
   m_Name: CheeseCake
   m_TagString: Food
@@ -162,3 +164,27 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.8, y: 2.82}
   m_EdgeRadius: 0
+--- !u!114 &-554669130156870479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4776347730519071427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb8aef1a51044042be934defef1c5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3832692563009495433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4776347730519071427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc35eb67fb8aa944a814c254f48cb66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

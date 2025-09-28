@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 4230865871671601519}
   - component: {fileID: 6032873378131093752}
   - component: {fileID: 9097158557149267363}
-  - component: {fileID: -3399366546145661472}
+  - component: {fileID: -981851995063623485}
+  - component: {fileID: -1414955172559416841}
+  - component: {fileID: 1408884423063743609}
   m_Layer: 0
   m_Name: Banana Pudding
   m_TagString: Food
@@ -163,7 +165,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6.31, y: 3.95}
   m_EdgeRadius: 0
---- !u!114 &-3399366546145661472
+--- !u!114 &-981851995063623485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,6 +174,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 4454266398468022094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e742a7636e313934caf2aa8f0382d854, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bb8aef1a51044042be934defef1c5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1414955172559416841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454266398468022094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc35eb67fb8aa944a814c254f48cb66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1408884423063743609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454266398468022094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912818936fc7c1d42a3fbed8b638bd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

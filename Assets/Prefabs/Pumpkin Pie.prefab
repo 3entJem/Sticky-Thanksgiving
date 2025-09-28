@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6662376547582740543}
   - component: {fileID: 2371638321394903651}
   - component: {fileID: 807150180217897523}
-  - component: {fileID: -7206630620702190728}
+  - component: {fileID: -217982254293249851}
   m_Layer: 0
   m_Name: Pumpkin Pie
   m_TagString: Food
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.6, y: 2.86}
   m_EdgeRadius: 0
---- !u!114 &-7206630620702190728
+--- !u!114 &-217982254293249851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,6 +172,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5008093885812734066}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e742a7636e313934caf2aa8f0382d854, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bb8aef1a51044042be934defef1c5c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
