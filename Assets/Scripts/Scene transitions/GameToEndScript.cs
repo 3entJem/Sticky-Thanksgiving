@@ -50,11 +50,12 @@ public class ObjectEndScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (triggerbox.CompareTag("Food"))
+        Debug.Log("message");
+        if (collision.gameObject.CompareTag("Food"))
         {
             strikes += 1;
         }
-        if (SideColliders.CompareTag("Christmas"))
+        if (collision.gameObject.CompareTag("Christmas"))
         {
             strikes += 1;
         }
