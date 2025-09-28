@@ -13,6 +13,11 @@ public class ScoreManager : MonoBehaviour
     public int Score = 0;
     public TextMeshProUGUI scoreText; // Optional: Assign a UI Text (from Canvas) to show score
 
+
+    void Start()
+    {
+        scoreText.text = "Score: " + Score.ToString();
+    }
     private void Awake()
     {
         // Ensure only one instance exists
@@ -29,10 +34,10 @@ public class ScoreManager : MonoBehaviour
     public void AddPoints(int points)
     {
         Score += points;
-        // UpdateUI();
+        
     }
 
-    private void UpdateUI()
+    private void Update()
     {
         if (scoreText != null)
         {

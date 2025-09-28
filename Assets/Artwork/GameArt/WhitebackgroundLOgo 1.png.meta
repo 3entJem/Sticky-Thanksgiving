@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WhitebackgroundLOgo 1_0: -1565583018637449833
+      WhitebackgroundLOgo 1_1: -5605038318006910338
+      WhitebackgroundLOgo 1_2: -7888689180558484103
+      WhitebackgroundLOgo 1_3: -1274191018909825782
+      WhitebackgroundLOgo 1_4: -6499024699314985993
+      WhitebackgroundLOgo 1_5: -2365649379145188664
+      WhitebackgroundLOgo 1_6: -2459835437027021986
+      WhitebackgroundLOgo 1_7: 7883570904091257000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
